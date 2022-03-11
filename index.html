@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/stylesheet/main.css"/>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">ТОПКОМ</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,14 +41,49 @@
 </nav>
 
 <!--Блок хэдер - Максон-->
-<div class="contentFirst">
 
+<!--Создать пункты чем занимается сайт-->
+
+<div class="contentFirst">
     <div class="title-block">
-        <h1 class="title-primary">Топком</h1>
+        <h1 class="title-primary">ТОПКОМ.RU</h1>
+    </div>
+    <div class = "description-container">
+
+        <div class = "description-main-block">
+            <div class = "icon-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c29420" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                </svg>
+            </div>
+            <div class="description-block ">
+                <h2 class="title-primary description-h2">Технический осмотр транспортных средств</h2>
+            </div>
+        </div>
+
+
+        <div class = "description-main-block">
+            <div class = "icon-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c29420" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                </svg>
+            </div>
+
+            <div class="description-block ">
+                <h3 class="title-primary description">Наша компания предоставляет услуги страхования всех категорий</h3>
+            </div>
+        </div>
     </div>
 
-    <div class="description-block">
-        <h3 class="title-primary description">Наша компания предоставляет услуги страхования всех видов</h3>
+
+    <div class="button-block">
+        <a href = "#feedback">
+            <button type="button" class="btn btn-success btn-lg btn-reset">
+                Оставить заявку
+            </button>
+        </a>
     </div>
 
 </div>
@@ -58,17 +93,17 @@
 <div class="form">
     <div class="row">
         <div class="col-lg-5 col-md-12 col-sm-12">
-           <p class="formLogo"> <img width="300px" src="assets/images/formLogo.svg"/></p>
+            <p class="formLogo"> <img width="300px" src="assets/images/formLogo.svg"/></p>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12">
             <h1 class="formLogo" id="feedback">Оставить заявку</h1>
             <form class="row g-3 needs-validation" novalidate>
                 <div class="col-12">
                     <label for="validationCustom01" class="form-label">Номер телефона</label>
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Введите номер телефона..."  required>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Введите номер телефона..." required>
                     <div class="valid-feedback">
                         Отлично!
-                </div>
+                    </div>
                     <div class="invalid-feedback">
                         Необходимо заполнить поле.
                     </div>
@@ -90,6 +125,10 @@
         </div>
     </div>
 </div>
+<div class = "myContainer">
+    <h1 class ="h1-reset-color">Наше местоположение</h1>
+</div>
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d892.9752720933286!2d85.0222555787704!3d56.50323587727
 5436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x432692f71b8f2707%3A0xbfda89397daa95d2!2z0KLQvtC80YHQutCw0Y8g0J7Q
 sdC70LDRgdGC0L3QsNGPINCf0LDRgdGB0LDQttC40YDRgdC60LDRjyDQmtC-0LzQv9Cw0L3QuNGP!5e0!3m2!1sru!2sru!4v1646997018516!5m2!1sru!2sru"
@@ -97,7 +136,7 @@ sdC70LDRgdGC0L3QsNGPINCf0LDRgdGB0LDQttC40YDRgdC60LDRjyDQmtC-0LzQv9Cw0L3QuNGP!5e0
 </iframe>
 
 <footer class="footer">
-    <div class="text-center p-4 bg-primary">
+    <div class="text-center p-4 bg-dark">
         <h6 class="footerText">© 2022 ООО ТОМСКАЯ ОБЛАСТНАЯ ПАССАЖИРСКАЯ КОМПАНИЯ</h6>
         <h6 class="footerText">dmitry.auto.site@gmail.com</h6>
     </div>
