@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;400&display=swap');
 
 body{
     margin: 0;
-    font-family: 'Playfair Display', serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -13,13 +11,17 @@ body{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background: #0d0113;
+    background-image: url("public/images/back2.jpg");
     min-height: 30vh;
 }
 
 .nav-main{
     position: fixed;
     width: 100vw;
+}
+
+a.nav-link{
+    font-weight: 600;
 }
 
 .title-primary{
@@ -51,8 +53,13 @@ body{
 .footerText{
 color: white;
 }
-.zapolnitel{
-    height: 300px;
-}
 
+
+/*Footer*/
+/*------------------------------------*/
+.footer{
+    min-width: 100vw;
+    bottom: 0;
+    left: 0;
+}
 
