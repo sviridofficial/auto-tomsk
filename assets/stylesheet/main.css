@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;400&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contentFirst{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background: #0d0113;
+    min-height: 30vh;
+}
+
+.nav-main{
+    position: fixed;
+    width: 100vw;
+}
+
+.title-primary{
+    color: white;
+    font-size: 3em;
+}
+
+.title-block{
+
+    padding: 0.5em;
+    background: sandybrown;
+    margin-top: 1em;
+}
+
+.title-primary.description{
+    font-size: 2em;
+    color: #000000;
+
+}
+
+.description-block{
+    margin-top: 1em;
+    background: #d2cec7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
