@@ -159,3 +159,18 @@ a.nav-link{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,34,31,1) 35%, rgba(0,212,255,1) 100%);
     padding: 20px;
 }
+
+#transoprt{
+    margin-top: 50px;
+}
+#transoprts{
+    padding-top: 50px;
+}
+#line{
+    height: 1px;
+    background-color: black;
+}
+.borderAvto{
+
+    margin:40px 5px;
+}

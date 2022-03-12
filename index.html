@@ -30,7 +30,7 @@
                     <a class="nav-link" href="#">Расписание</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Услуги</a>
+                    <a class="nav-link" href="#transoprt">Услуги</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#feedback">Обратная связь</a>
@@ -48,11 +48,12 @@
     <div class="title-block">
         <h1 class="title-primary">ТОПКОМ.RU</h1>
     </div>
-    <div class = "description-container">
+    <div class="description-container">
 
-        <div class = "description-main-block">
-            <div class = "icon-block">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c29420" class="bi bi-check2-circle" viewBox="0 0 16 16">
+        <div class="description-main-block">
+            <div class="icon-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c29420"
+                     class="bi bi-check2-circle" viewBox="0 0 16 16">
                     <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
                     <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
                 </svg>
@@ -63,9 +64,10 @@
         </div>
 
 
-        <div class = "description-main-block">
-            <div class = "icon-block">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c29420" class="bi bi-check2-circle" viewBox="0 0 16 16">
+        <div class="description-main-block">
+            <div class="icon-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#c29420"
+                     class="bi bi-check2-circle" viewBox="0 0 16 16">
                     <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
                     <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
                 </svg>
@@ -79,7 +81,7 @@
 
 
     <div class="button-block">
-        <a href = "#feedback">
+        <a href="#feedback">
             <button type="button" class="btn btn-success btn-lg btn-reset">
                 Оставить заявку
             </button>
@@ -89,18 +91,45 @@
 </div>
 
 <!------------------------------------------------------->
+<div class="conteiner-fluid" id="transoprt">
+    <h1 align="center">Виды транспорта</h1>
+    <h4 align="center">Мы проводим технический осмотр на все виды транспорта</h4>
+    <div class="row" id="transports">
+        <div class="col-md-4">
+            <div class="borderAvto">
+                <h3 align="center">Легковые автомобили</h3>
+                <p align="center"><img width="200px" src="assets/images/car.svg"></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="borderAvto">
+            <h3 align="center">Грузовые автомобили</h3>
+            <p align="center"><img width="200px" src="assets/images/truck.svg"></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="borderAvto">
+            <h3 align="center">Автобусы</h3>
+            <p align="center"><img width="200px" src="assets/images/bus.svg"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="conteiner" id="line">
 
+</div>
 <div class="form">
     <div class="row">
         <div class="col-lg-5 col-md-12 col-sm-12">
-            <p class="formLogo"> <img width="300px" src="assets/images/formLogo.svg"/></p>
+            <p class="formLogo"><img width="300px" src="assets/images/formLogo.svg"/></p>
         </div>
         <div class="col-lg-7 col-md-12 col-sm-12">
             <h1 class="formLogo" id="feedback">Оставить заявку</h1>
             <form class="row g-3 needs-validation" novalidate>
                 <div class="col-12">
                     <label for="validationCustom01" class="form-label">Номер телефона</label>
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Введите номер телефона..." required>
+                    <input type="text" class="form-control" id="validationCustom01"
+                           placeholder="Введите номер телефона..." required>
                     <div class="valid-feedback">
                         Отлично!
                     </div>
@@ -110,7 +139,8 @@
                 </div>
                 <div class="col-12">
                     <label for="validationCustom02" class="form-label">Ваше предложение</label>
-                    <textarea class="form-control" id="validationCustom02" rows="5" placeholder="Введите предложение..." required></textarea>
+                    <textarea class="form-control" id="validationCustom02" rows="5" placeholder="Введите предложение..."
+                              required></textarea>
                     <div class="valid-feedback">
                         Отлично!
                     </div>
@@ -125,8 +155,8 @@
         </div>
     </div>
 </div>
-<div class = "myContainer">
-    <h1 class ="h1-reset-color">Наше местоположение</h1>
+<div class="myContainer">
+    <h1 class="h1-reset-color">Наше местоположение</h1>
 </div>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d892.9752720933286!2d85.0222555787704!3d56.50323587727
