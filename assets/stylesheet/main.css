@@ -81,6 +81,10 @@ main-bg-title{
     width: 100vw;
 }
 
+.navbar-brand{
+    font-size: 1.5rem;
+}
+
 a.nav-link{
     font-weight: 600;
 }
@@ -106,7 +110,7 @@ a.nav-link{
 
 .title-primary.description{
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 300;
     color: rgb(255 255 255 / 72%);
 }
 
