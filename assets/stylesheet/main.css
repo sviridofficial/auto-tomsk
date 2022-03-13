@@ -1,11 +1,61 @@
 
+ul,li{
+   list-style: none;
+}
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+
 }
 
 /*Main block*/
+.header{
+    background-image: linear-gradient(90deg, rgba(2,0,36,0.8) 0%, rgba(18,34,31,0.8) 35%, rgba(23, 86, 98, 0.8) 100%),
+    url("https://razvozka24.ru/wp-content/uploads/11122.jpg") ;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position:  center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-header{
+    padding: 0;
+    max-height: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1300px;
+
+}
+
+
+main-bg-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-title{
+
+}
+
+.title-info{
+    font-size: 5em;
+    color: #ffffff;
+    font-weight: 800;
+    max-width: 90vw;
+}
+
+.star-hover{
+    transition: 0.5s;
+}
+
+.star-hover:hover{
+    fill: #c29420;
+    cursor: pointer;
+}
+
 .contentFirst{
     padding: 1em;
     display: flex;
@@ -16,12 +66,7 @@ body{
     max-width: 100vw;
     max-height: 700px;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)),
-    url("https://3drive.ru/uploads/articles/2018/10/strahovanie-na-segodnyashnij-den-odno-iz-samyh-glavnyh-trebovanij-k-avto.jpg") ;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position:  center;
-    background-size: cover;
-    background-attachment: fixed;
+    margin-right: 1em;
 
 }
 
@@ -39,17 +84,24 @@ a.nav-link{
     font-size: 4em;
     font-weight: 800;
     max-width: 80vw;
+    margin-bottom: 0;
 }
 
 .title-block{
-    padding: 0.5em;
-    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.title-block.main-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title-primary.description{
     font-size: 1.5em;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.72);
+    font-weight: 600;
+    color: rgb(255 255 255 / 72%);
 }
 
 .title-primary.description-h2{
@@ -65,36 +117,95 @@ a.nav-link{
 }
 
 .description-block{
-    margin-bottom: 1em;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
     max-width: 80vw;
+    width: 100%;
     padding: 1em;
-    background: rgba(0, 0, 0, 0.41);
+    background: #212529b3;
     -webkit-box-shadow: -5px 4px 8px 0px rgba(81, 134, 36, 0.38);
-    -moz-box-shadow: -5px 4px 8px 0px rgba(81, 134, 36, 0.38);
-    box-shadow: -5px 4px 8px 0px rgba(81, 134, 36, 0.38);
+    -moz-box-shadow: -5px 4px 8px 0px rgba(81, 134, 36, 0.25);
+    box-shadow: -5px 4px 8px 0px rgba(197, 147, 21, 0.25);
 }
 
 .description-main-block{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.description-main-block:not(:last-child){
+    margin-bottom: 1em;
 }
 
 .icon-block{
     margin-right: 10px;
 }
 
+.button-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button-block.more-info{
+    justify-content: flex-start;
+}
+
+.button-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-container{
+    animation: arrowAnimate infinite 2s ;
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+@keyframes arrowAnimate {
+    0%{
+        transform: translate(0,0)
+    }
+    50%{
+        transform: translate(-30px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
 .btn-reset{
-    background: #c29420;
-    color: black;
-    font-weight: 600;
+    background: #c59315;
+    color: #212529;
+    font-weight: 500;
     -webkit-box-shadow: 6px 10px 19px -6px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 6px 10px 19px -6px rgba(34, 60, 80, 0.2);
     box-shadow: 6px 10px 19px -6px rgba(34, 60, 80, 0.2);
+}
+
+.button-container{
+    margin-top: 1em;
+}
+
+.button-container:not(:last-child){
+    margin-right: 1em;
+}
+
+.btn-reset.btn-info{
+    background: none;
+    color: white;
+    border: white solid 1px;
+}
+
+.btn-info:hover{
+    color: darkgray;
+    border: darkgray solid 1px;
 }
 
 .reset-link-text{
@@ -102,12 +213,58 @@ a.nav-link{
     color: black ;
     transition: 0.5s;
 }
+
 .reset-link-text:hover{
     color: white;
 }
 
 .h1-reset-color{
     color:white
+}
+
+.title-info{
+    font-size: 4em;
+}
+
+.title-info.rating{
+    font-size: 1.5em;
+    color: darkgray;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 2200px){
+    .button-block.more-info{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .title-primary{
+        font-size: 3em;
+    }
+
+    .title-primary.description{
+        font-size: 1em;
+    }
+
+    .btn-reset{
+        font-size: 0.9em;
+        background: #c29420;
+        min-width: 150px;
+    }
+
+    .button-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-right: 0em;
+    }
+    .button-container:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .button-block.more-info{
+        justify-content: flex-start;
+    }
 }
 
 /*------------------------------------*/
@@ -133,7 +290,6 @@ a.nav-link{
 }
 
 /*------------------------------------*/
-
 .form-width-reduce{
     max-width: 600px;
 }
@@ -144,10 +300,12 @@ a.nav-link{
     max-width: 700px;
     max-width: 900px;
 }
+
 .form-control{
     max-width: 700px;
     max-width: 900px;
 }
+
 .myContainer{
     width: 100vw;
     height: 20vh;
@@ -159,6 +317,7 @@ a.nav-link{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,34,31,1) 35%, rgba(0,212,255,1) 100%);
     padding: 20px;
 }
+
 
 #transoprt{
     margin-top: 50px;
@@ -173,4 +332,37 @@ a.nav-link{
 .borderAvto{
 
     margin:40px 5px;
+}
+
+/*Контактная зона*/
+/*---------------------------------------*/
+
+.card-body-column{
+    min-width: 300px;
+}
+
+.contact-info{
+
+}
+
+.photo-container{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-department{
+    background-position:  center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.list-reset{
+    padding-left: 0;
 }
