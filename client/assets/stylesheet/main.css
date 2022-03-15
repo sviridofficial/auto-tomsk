@@ -1,12 +1,14 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+}
 
 ul,li{
    list-style: none;
 }
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     overflow-x: hidden;
-
 }
 
 /*Main block*/
@@ -24,7 +26,7 @@ body{
     max-height: 1000px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1300px;
+    max-width: 1280px;
 }
 
 @media screen and (max-width: 800px){
@@ -72,8 +74,6 @@ main-bg-title{
     max-width: 100vw;
     max-height: 700px;
     min-height: 100vh;
-    margin-right: 1em;
-
 }
 
 .nav-main{
@@ -138,6 +138,7 @@ a.nav-link{
     -webkit-box-shadow: -5px 4px 8px 0px rgba(81, 134, 36, 0.38);
     -moz-box-shadow: -5px 4px 8px 0px rgba(81, 134, 36, 0.25);
     box-shadow: -5px 4px 8px 0px rgba(197, 147, 21, 0.25);
+    border: #c29420 solid 1px;
 }
 
 .description-main-block{
@@ -148,7 +149,7 @@ a.nav-link{
 }
 
 .description-main-block:not(:last-child){
-    margin-bottom: 1em;
+    margin-bottom: 2.5em;
 }
 
 .icon-block{
@@ -224,6 +225,10 @@ a.nav-link{
     transition: 0.5s;
 }
 
+a.reset-link-text{
+    color: navajowhite;
+}
+
 .reset-link-text:hover{
     color: white;
 }
@@ -292,15 +297,16 @@ a.nav-link{
     left: 0;
 }
 .form{
-    max-width: 1200px;
+    max-width: 1280px;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 .formLogo{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     width: 100%;
+    height: 100%;
     text-align: center;
 }
 
@@ -311,7 +317,7 @@ a.nav-link{
 }
 
 .footerText{
-    color: white;
+    color: rgba(255, 255, 255, 0.67);
 }
 
 /*------------------------------------*/
@@ -343,22 +349,135 @@ a.nav-link{
     padding: 20px;
 }
 
-
-#transoprt{
-    margin-top: 50px;
-}
 #transoprts{
     padding-top: 50px;
 }
+
 #line{
     height: 1px;
     background-color: black;
 }
-.borderAvto{
 
+.borderAvto{
     margin:40px 5px;
 }
 
+.transport-block{
+    padding: 20px;
+    z-index: -5;
+    background: rgb(119, 119, 119);
+}
+
+.title-main-transport{
+    color: rgba(255, 255, 255, 0.69);
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.title-main-transport.first-title{
+    font-weight: 400;
+}
+
+.title-main-transport.slide-title{
+    color: rgba(31, 2, 2, 0.69);
+}
+
+.title-main-transport.child-slide-title{
+    margin-top: 0;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+}
+
+.transport-insurance{
+    margin-top: 10px;
+    overflow: auto;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.transport-insurance:before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top:0;
+    display: block;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(52, 51, 79, 0.55) 0%, rgb(213 213 213) 35%, rgba(255, 222, 161, 0.5) 100%);
+    filter: blur(50px);
+}
+
+.slider-item{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info-number-phone{
+    margin-left: 10px;
+    color: navajowhite;
+    cursor: pointer;
+}
+
+.notification{
+    opacity: 0;
+}
+
+@keyframes animateNotification {
+     0%{
+         opacity: 0;
+         transform: translateX(-100px);
+     }
+     50%{
+         opacity: 1;
+         transform: translateX(0px);
+     }
+    100%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+ }
+
+@keyframes animateOut {
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+}
+
+.notification.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animateNotification ease 1s;
+}
+
+.notification-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
 /*Контактная зона*/
 /*---------------------------------------*/
 
@@ -392,12 +511,26 @@ a.nav-link{
     justify-content: center;
 }
 
+.list-item:is(:first-child){
+
+}
+.list-item{
+
+}
+
 .photo-container{
     width: 150px;
     height: 150px;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 50%;
+}
+
+.photo-osago{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .img-department{
@@ -407,8 +540,9 @@ a.nav-link{
     width: auto;
     height: 100%;
     margin: 0 auto;
-
 }
+
+
 /*Location*/
 /*-----------------------------------------*/
 
@@ -417,13 +551,17 @@ a.nav-link{
     max-height: 400px;
 }
 
+.myContainer.location-info.schedule{
+    max-height: 200px;
+}
+
 .h1-reset-font{
-    color:white;
+    color: rgba(255, 255, 255, 0.69);
     font-weight: 600;
 }
 
 .h3-reset-font{
-    color:white;
+    color: rgba(255, 255, 255, 0.64);
     font-size: 1.5em;
     font-weight: 300;
 }
@@ -479,4 +617,6 @@ a.nav-link{
 }
 #scheduleText{
     padding-top: 20px;
+    font-weight: 400;
+    color: rgba(255, 218, 218, 0.75);
 }
